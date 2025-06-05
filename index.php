@@ -13,20 +13,21 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  background: white;
   min-height: 100vh;
-  color: #e2e8f0;
+  color: #1e293b;
 }
 
 /* Glassmorphism header */
 header {
-  background: rgba(15, 15, 35, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 }
 
 .ribbon {
@@ -39,11 +40,10 @@ header {
 }
 
 .ribbon-left h1 {
-  color: white;
+  color: #0f172a;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.025em;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .ribbon-center {
@@ -57,27 +57,25 @@ header {
 #searchBar {
   width: 100%;
   padding: 0.75rem 1.25rem;
-  border: none;
+  border: 2px solid #e2e8f0;
   border-radius: 50px;
-  background: rgba(30, 30, 50, 0.9);
-  backdrop-filter: blur(10px);
-  color: #e2e8f0;
+  background: #f8fafc;
+  color: #1e293b;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 #searchBar:focus {
-  background: rgba(30, 30, 50, 0.95);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
-  border-color: rgba(99, 102, 241, 0.5);
+  border-color: #64748b;
 }
 
 #searchBar::placeholder {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .ribbon-right {
@@ -92,25 +90,30 @@ header {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(30, 30, 50, 0.6);
+  background: #f8fafc;
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .social-link:hover {
-  background: rgba(30, 30, 50, 0.8);
+  background: #e2e8f0;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-color: #64748b;
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: #475569;
+  transition: fill 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  fill: #0f172a;
 }
 
 main {
@@ -127,15 +130,14 @@ main {
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  color: white;
+  color: #0f172a;
   margin-bottom: 1rem;
-  text-shadow: 0 4px 8px rgba(0,0,0,0.3);
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #475569;
   margin-bottom: 2rem;
   font-weight: 400;
 }
@@ -156,17 +158,16 @@ main {
   position: relative;
   text-decoration: none;
   color: white;
-  background: rgba(30, 30, 50, 0.6);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: white;
+  border: 2px solid #e2e8f0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-box:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #64748b;
 }
 
 .project-box img {
@@ -186,14 +187,14 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.5));
   padding: 1.5rem;
   transform: translateY(0);
   transition: all 0.3s ease;
 }
 
 .project-box:hover .overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
 }
 
 .overlay h2 {
@@ -201,6 +202,7 @@ main {
   font-weight: 600;
   margin: 0;
   letter-spacing: -0.025em;
+  color: white;
 }
 
 .project-detail {
@@ -208,11 +210,10 @@ main {
   margin: 4rem auto;
   padding: 2rem;
   text-align: center;
-  background: rgba(30, 30, 50, 0.8);
-  backdrop-filter: blur(20px);
+  background: white;
   border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e2e8f0;
 }
 
 .project-detail img {
@@ -221,7 +222,7 @@ main {
   object-fit: cover;
   border-radius: 16px;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-detail a {
@@ -229,18 +230,19 @@ main {
   align-items: center;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  background: #0f172a;
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.2);
 }
 
 .project-detail a:hover {
+  background: #334155;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.6);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.3);
 }
 
 /* Responsive adjustments */
@@ -345,11 +347,11 @@ main {
             <p class="hero-subtitle">Exploring creativity through code and design</p> -->
         </section>
         <div class="grid" id="projectGrid">
-            <!-- Sample projects - replace with your PHP loop -->
+            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
-                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=280&h=150&fit=crop" alt="TEST">
+                <img src="" alt="TEST">
                 <div class="overlay">
-                    <h2>AI Chatbot</h2>
+                    <h2>TEST</h2>
                 </div>
             </a>
         </div>
