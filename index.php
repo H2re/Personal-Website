@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>My Portfolio</h1>
+<header>
+    <div class="header-content">
+        <div class="header-left">
+            <h1>Projects</h1>
+        </div>
+        <div class="header-center">
             <input type="text" id="searchBar" placeholder="Search projects...">
         </div>
-    </header>
+        <div class="header-right">
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <!-- Add more icons as needed -->
+        </div>
+    </div>
+</header>
 
     <main>
         <div class="grid" id="projectGrid">
