@@ -167,14 +167,6 @@ main {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
   border-color: rgba(99, 102, 241, 0.4);
-}, 0.2, 1);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-}
-
-.project-box:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .project-box img {
@@ -214,13 +206,13 @@ main {
 .project-detail {
   max-width: 800px;
   margin: 4rem auto;
-  padding: 0 2rem;
+  padding: 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(30, 30, 50, 0.8);
   backdrop-filter: blur(20px);
   border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-detail img {
@@ -237,21 +229,33 @@ main {
   align-items: center;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
 }
 
 .project-detail a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.6);
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .ribbon {
     flex-direction: column;
@@ -275,6 +279,11 @@ main {
   .grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .project-box {
+    max-width: 100%;
+    height: 200px;
   }
   
   main {
@@ -339,44 +348,58 @@ main {
 <div class="grid" id="projectGrid">
 <!-- Sample projects - replace with your PHP loop -->
 <a href="#" class="project-box" data-title="ai chatbot">
-<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=280&fit=crop" alt="AI Chatbot">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=280&h=150&fit=crop" alt="AI Chatbot">
 <div class="overlay">
 <h2>AI Chatbot</h2>
 </div>
 </a>
 
 <a href="#" class="project-box" data-title="portfolio website">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=280&fit=crop" alt="Portfolio Website">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=280&h=150&fit=crop" alt="Portfolio Website">
 <div class="overlay">
 <h2>Portfolio Website</h2>
 </div>
 </a>
 
 <a href="#" class="project-box" data-title="mobile app">
-<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=280&fit=crop" alt="Mobile App">
+<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=280&h=150&fit=crop" alt="Mobile App">
 <div class="overlay">
 <h2>Mobile App</h2>
 </div>
 </a>
 
 <a href="#" class="project-box" data-title="data visualization">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=280&fit=crop" alt="Data Visualization">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=280&h=150&fit=crop" alt="Data Visualization">
 <div class="overlay">
 <h2>Data Visualization</h2>
 </div>
 </a>
 
 <a href="#" class="project-box" data-title="e-commerce site">
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=280&fit=crop" alt="E-commerce Site">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=280&h=150&fit=crop" alt="E-commerce Site">
 <div class="overlay">
 <h2>E-commerce Site</h2>
 </div>
 </a>
 
 <a href="#" class="project-box" data-title="game development">
-<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=280&fit=crop" alt="Game Development">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=280&h=150&fit=crop" alt="Game Development">
 <div class="overlay">
 <h2>Game Development</h2>
+</div>
+</a>
+
+<a href="#" class="project-box" data-title="web scraper">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=280&h=150&fit=crop" alt="Web Scraper">
+<div class="overlay">
+<h2>Web Scraper</h2>
+</div>
+</a>
+
+<a href="#" class="project-box" data-title="machine learning">
+<img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=280&h=150&fit=crop" alt="Machine Learning">
+<div class="overlay">
+<h2>Machine Learning</h2>
 </div>
 </a>
 </div>
