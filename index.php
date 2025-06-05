@@ -1,6 +1,10 @@
 <?php include 'data.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 <header>
     <div class="header-content">
@@ -17,7 +21,6 @@
             <a href="https://www.linkedin.com/in/camden-laursen-carr-905869307/" target="_blank" title="LinkedIn">
                 <img src="images/linkedin.png" alt="LinkedIn">
             </a>
-            <!-- Add more icons as needed -->
         </div>
     </div>
 </header>
