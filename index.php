@@ -6,25 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="navbar">
-    <div class="navbar-left">
-      <h1>Projects</h1>
+    <header>
+    <div class="navbar">
+        <div class="navbar-left">
+        </div>
+        <div class="navbar-center">
+        <input type="text" id="searchBar" placeholder="Search projects...">
+        </div>
+        <div class="navbar-right">
+        <a href="https://github.com/h2re" target="_blank" title="GitHub">
+            <img src="images/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/camden-laursen-carr-905869307" target="_blank" title="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
+        </div>
     </div>
-    <div class="navbar-center">
-      <input type="text" id="searchBar" placeholder="Search projects...">
-    </div>
-    <div class="navbar-right">
-      <a href="https://github.com/h2re" target="_blank" title="GitHub">
-        <img src="images/github.png" alt="GitHub">
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
-        <img src="images/linkedin.png" alt="LinkedIn">
-      </a>
-    </div>
-  </div>
-</header>
-
+    </header>
     <main>
         <div class="grid" id="projectGrid">
             <?php foreach ($projects as $project): ?>
