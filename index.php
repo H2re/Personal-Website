@@ -354,52 +354,43 @@ main {
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>
-        <div class="grid" id="projectGrid">
-            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
                 <img src="" alt="TEST">
                 <div class="overlay">
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>
-        <div class="grid" id="projectGrid">
-            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
                 <img src="" alt="TEST">
                 <div class="overlay">
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>
-        <div class="grid" id="projectGrid">
-            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
                 <img src="" alt="TEST">
                 <div class="overlay">
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>
-        <div class="grid" id="projectGrid">
-            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
                 <img src="" alt="TEST">
                 <div class="overlay">
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>
-        <div class="grid" id="projectGrid">
-            <!-- Sample projects -->
             <a href="#" class="project-box" data-title="TEST">
                 <img src="" alt="TEST">
                 <div class="overlay">
                     <h2>TEST</h2>
                 </div>
             </a>
-        </div>        
+            <a href="#" class="project-box" data-title="TEST">
+                <img src="" alt="TEST">
+                <div class="overlay">
+                    <h2>TEST</h2>
+                </div>
+            </a>
+        </div>      
     </main>
 
     <script>
