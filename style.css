@@ -4,60 +4,67 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Full-width dark Amazon-style top bar */
 header {
-    background-color: #3a3a3a;
-    padding: 16px 30px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  width: 100%;
+  background-color: #232f3e;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-content {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/* Flexbox layout for navbar */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-left h1 {
-    margin: 0;
-    font-size: 1.6em;
-    color: white;
+/* Left: Title */
+.navbar-left h1 {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
 }
 
-.header-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+/* Center: Search bar */
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 #searchBar {
-    padding: 8px 14px;
-    font-size: 1em;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    width: 100%;
-    max-width: 300px;
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
 }
 
-.header-right {
-    display: flex;
-    gap: 16px;
+/* Right: Icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.header-right img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
-    transition: transform 0.2s ease;
+.navbar-right img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); /* makes dark SVGs white */
+  transition: transform 0.2s ease;
 }
 
-.header-right img:hover {
-    transform: scale(1.15);
+.navbar-right img:hover {
+  transform: scale(1.1);
 }
 
 main {
