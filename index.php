@@ -320,7 +320,7 @@ main {
     <header>
         <div class="ribbon">
             <div class="ribbon-left">
-                <h1>Portfolio</h1>
+                <h1>Project Portfolio</h1>
             </div>
             <div class="ribbon-center">
                 <input type="text" id="searchBar" placeholder="Search projects...">
@@ -341,8 +341,8 @@ main {
     </header>
     <main>
         <section class="hero-section">
-            <h1 class="hero-title">My Projects</h1>
-            <p class="hero-subtitle">Exploring creativity through code and design</p>
+            <!-- <h1 class="hero-title">Embedded System</h1>
+            <p class="hero-subtitle">Exploring creativity through code and design</p> -->
         </section>
         <div class="grid" id="projectGrid">
             <!-- Sample projects - replace with your PHP loop -->
