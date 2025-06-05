@@ -1,12 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f8f8f8;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
+header {
+    background-color: #24292e;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#searchBar {
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 .grid {
@@ -18,24 +50,30 @@ h1 {
 
 .project-box {
     position: relative;
-    width: 250px;
+    width: 260px;
     height: 180px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     text-decoration: none;
     color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #000;
 }
 
 .project-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .project-box:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
+}
+
+.project-box:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 .overlay {
@@ -43,19 +81,40 @@ h1 {
     bottom: 0;
     background: rgba(0,0,0,0.6);
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     box-sizing: border-box;
+    transition: background 0.3s ease;
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
 }
 
 .project-detail {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
     text-align: center;
 }
 
 .project-detail img {
     width: 100%;
-    max-height: 300px;
+    max-height: 360px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-detail a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.project-detail a:hover {
+    text-decoration: underline;
 }

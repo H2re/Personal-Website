@@ -7,16 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Projects</h1>
-    <div class="grid">
-        <?php foreach ($projects as $project): ?>
-            <a href="project.php?id=<?= $project['id'] ?>" class="project-box">
-                <img src="<?= $project['image'] ?>" alt="<?= $project['title'] ?>">
-                <div class="overlay">
-                    <h2><?= $project['title'] ?></h2>
-                </div>
-            </a>
-        <?php endforeach; ?>
-    </div>
+    <header>
+        <div class="header-content">
+            <h1>My Portfolio</h1>
+            <input type="text" id="searchBar" placeholder="Search projects...">
+        </div>
+    </header>
+
+    <main>
+        <div class="grid" id="projectGrid">
+            <?php foreach ($projects as $project): ?>
+                <a href="project.php?id=<?= $project['id'] ?>" class="project-box" data-title="<?= strtolower($project['title']) ?>">
+                    <img src="<?= $project['image'] ?>" alt="<?= $project['title'] ?>">
+                    <div class="overlay">
+                        <h2><?= $project['title'] ?></h2>
+                    </div>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </main>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const boxes = document.querySelectorAll('.project-box');
+
+        searchBar.addEventListener('input', () => {
+            const query = searchBar.value.toLowerCase();
+            boxes.forEach(box => {
+                const title = box.getAttribute('data-title');
+                box.style.display = title.includes(query) ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
