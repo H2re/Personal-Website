@@ -13,16 +13,16 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   min-height: 100vh;
-  color: #2d3748;
+  color: #e2e8f0;
 }
 
 /* Glassmorphism header */
 header {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(15, 15, 35, 0.8);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -59,22 +59,25 @@ header {
   padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(30, 30, 50, 0.9);
   backdrop-filter: blur(10px);
+  color: #e2e8f0;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #searchBar:focus {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  background: rgba(30, 30, 50, 0.95);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
   transform: translateY(-1px);
+  border-color: rgba(99, 102, 241, 0.5);
 }
 
 #searchBar::placeholder {
-  color: #6b7280;
+  color: #94a3b8;
 }
 
 .ribbon-right {
@@ -89,18 +92,19 @@ header {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(30, 30, 50, 0.6);
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-link:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(30, 30, 50, 0.8);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  border-color: rgba(99, 102, 241, 0.4);
 }
 
 .social-icon {
@@ -138,24 +142,32 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
   justify-items: center;
 }
 
 .project-box {
   width: 100%;
-  max-width: 380px;
-  height: 280px;
-  border-radius: 20px;
+  max-width: 280px;
+  height: 220px;
+  border-radius: 16px;
   overflow: hidden;
   position: relative;
   text-decoration: none;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 50, 0.6);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.project-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border-color: rgba(99, 102, 241, 0.4);
+}, 0.2, 1);
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 
