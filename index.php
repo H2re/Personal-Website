@@ -1,11 +1,6 @@
 <?php include 'data.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
 <header>
     <div class="header-content">
@@ -16,11 +11,11 @@
             <input type="text" id="searchBar" placeholder="Search projects...">
         </div>
         <div class="header-right">
-            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-                <img src="images/github.svg" alt="GitHub">
+            <a href="https://github.com/H2re" target="_blank" title="GitHub">
+                <img src="images/github.png" alt="GitHub">
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
-                <img src="images/linkedin.svg" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/camden-laursen-carr-905869307/" target="_blank" title="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn">
             </a>
             <!-- Add more icons as needed -->
         </div>
