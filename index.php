@@ -15,11 +15,11 @@
       <input type="text" id="searchBar" placeholder="Search projects...">
     </div>
     <div class="navbar-right">
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-        <img src="images/github.svg" alt="GitHub">
+      <a href="https://github.com/h2re" target="_blank" title="GitHub">
+        <img src="images/github.png" alt="GitHub">
       </a>
       <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
-        <img src="images/linkedin.svg" alt="LinkedIn">
+        <img src="images/linkedin.png" alt="LinkedIn">
       </a>
     </div>
   </div>
