@@ -7,13 +7,13 @@
 </head>
 <body>
     <header>
-    <div class="navbar">
-        <div class="navbar-left">
+    <div class="ribbon">
+        <div class="ribbon-left">
         </div>
-        <div class="navbar-center">
+        <div class="ribbon-center">
         <input type="text" id="searchBar" placeholder="Search projects...">
         </div>
-        <div class="navbar-right">
+        <div class="ribbon-right">
         <a href="https://github.com/h2re" target="_blank" title="GitHub">
             <img src="images/github.png" alt="GitHub">
         </a>

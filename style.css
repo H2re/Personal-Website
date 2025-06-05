@@ -80,8 +80,8 @@ main {
 }
 
 .project-box {
-    width: 260px;
-    height: 180px;
+    width: 375px;
+    height: 260px;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     overflow: hidden;
